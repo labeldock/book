@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+#
+# require imagemagick
+#
+# OSX    : brew install imagemagick
+# devian : apt-get install imagemagick
+#
+gem 'rmagick'
