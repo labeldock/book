@@ -1,72 +1,72 @@
-{        
-    "name": "textmate-bindings",
-	"displayName": "Textmate bindings",
-	"description": "ported from the TextMate configuration",
-    "version": "0.0.3",
-	"publisher": "labeldock",
-    "engines": {
-        "vscode": "^1.0.0"
+{
+  "name": "textmate-bindings",
+  "displayName": "Textmate bindings",
+  "description": "ported from the TextMate configuration",
+  "version": "0.0.3",
+  "publisher": "labeldock",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "textmate-bindings",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Twilight.tmTheme"
+      }
+    ],
+    "setting": {
+      "editor.fontSize": 13,
+      "editor.lineHeight": 18,
+      "editor.insertSpaces": true,
+      "editor.roundedSelection": false,
+      "editor.scrollBeyondLastLine": false,
+      "editor.quickSuggestions": false,
+      "html.format.wrapLineLength": 0
     },
-    "contributes": {
-        "themes": [
-            {
-                "label": "textmate-bindings",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Twilight.tmTheme"
-            }
-        ],
-		"setting":{
-            "editor.fontSize": 13,
-            "editor.lineHeight": 18,
-            "editor.insertSpaces": true,
-            "editor.roundedSelection": false,
-            "editor.scrollBeyondLastLine":false,
-            "editor.quickSuggestions":false,
-            "html.format.wrapLineLength":0
-		},
-		"keybindings": [
-			{ 
-				"key": "ctrl+w",
-				"command": "editor.action.addSelectionToNextFindMatch",
-				"when": "editorFocus" 
-			},
-			{ 
-				"key": "up",
-				"command": "removeSecondaryCursors",
-				"when": "editorTextFocus && editorHasMultipleSelections" 
-			},
-			{ 
-				"key": "down",
-				"command": "removeSecondaryCursors",
-				"when": "editorTextFocus && editorHasMultipleSelections" 
-			},
-            { 
-                "key": "ctrl+shift+o", 
-                "command": "workbench.action.terminal.focus" 
-            },
-            { 
-                "key": "ctrl+shift+-",
-                "command": "workbench.action.terminal.focusNext" 
-            },
-            { 
-                "key": "ctrl+shift+=",     
-                "command": "workbench.action.terminal.new" 
-            },
-			{ 
-				"key": "escape",
-				"command": "editor.action.triggerSuggest",
-				"when": "editorTextFocus && !suggestWidgetVisible"
-			},
-            { 
-                "key": "cmd+l",
-                "command": "workbench.action.gotoLine",
-                "when": "editorFocus"
-            },
-            { 
-                "key": "shift+ctrl+k",
-                "command": "editor.action.deleteLines",
-                "when": "editorTextFocus" 
-            }
-		]
-    }
+    "keybindings": [
+      {
+        "key": "ctrl+w",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+      },
+      {
+        "key": "up",
+        "command": "removeSecondaryCursors",
+        "when": "editorTextFocus && editorHasMultipleSelections"
+      },
+      {
+        "key": "down",
+        "command": "removeSecondaryCursors",
+        "when": "editorTextFocus && editorHasMultipleSelections"
+      },
+      {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.terminal.focus"
+      },
+      {
+        "key": "ctrl+shift+-",
+        "command": "workbench.action.terminal.focusNext"
+      },
+      {
+        "key": "ctrl+shift+=",
+        "command": "workbench.action.terminal.new"
+      },
+      {
+        "key": "escape",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+      },
+      {
+        "key": "cmd+l",
+        "command": "workbench.action.gotoLine",
+        "when": "editorFocus"
+      },
+      {
+        "key": "shift+ctrl+k",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
 }
