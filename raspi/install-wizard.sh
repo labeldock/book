@@ -7,8 +7,8 @@ main() {
   read_val "Install optional utils? [y/n]" SHOULD_SETUP_OPTION
   read_val "Install chromium kiosk? [y/n]" SHOULD_SETUP_KIOSK
   
-  ./install-git-vim.sh
   ./first-upgrade.sh
+  ./install-git-vim.sh
   ./install-nvm.sh
   if [ $SHOULD_SETUP_OPTION == 'y' ]; then
     ./install-optional-utils.sh
