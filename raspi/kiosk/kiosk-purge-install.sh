@@ -8,4 +8,5 @@ sudo apt-get update
 sudo apt-get upgrade
 
 echo "Installning necessary packages..."
-sudo apt-get install chromium-browser unclutter lxde -y
+sudo apt-get install unclutter lxde -y
+sudo apt-get install chromium-browser -y
