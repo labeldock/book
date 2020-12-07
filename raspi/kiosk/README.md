@@ -14,6 +14,14 @@ sudo apt update -y && sudo apt upgrade -y
 ```
 
 ## STEP 3
-purge
+purge (kiosk-purge-install)
 
 ## STEP 3
+~/.config/lxsession/LXDE/autostart
+```
+@xset s off
+@xset -dpms
+@xset s noblank
+@sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' ~/.config/chromium-browser Default/Preferences
+@chromium-browser --noerrdialogs --kiosk https://google.com --incognito --disable-translate
+```

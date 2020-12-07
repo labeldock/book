@@ -14,7 +14,7 @@ main() {
     ./install-optional-utils.sh
   fi
   if [[ $SHOULD_SETUP_KIOSK == 'y' ]]; then
-    ./kiosk/run-purge-install.sh
+    ./kiosk/kiosk-purge-install.sh
   fi
 }
 
