@@ -11,11 +11,11 @@ main() {
   ./install-git-vim.sh
   ./install-nvm.sh
 
-  if [ $SHOULD_SETUP_OPTION == "y" ]; then
+  if [ $SHOULD_SETUP_OPTION == y ]; then
     ./install-optional-utils.sh
   fi
   
-  if [ $SHOULD_SETUP_KIOSK == "y" ]; then
+  if [ $SHOULD_SETUP_KIOSK == y ]; then
     ./kiosk/kiosk-purge-install.sh
   fi
 }
