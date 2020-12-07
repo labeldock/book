@@ -11,17 +11,17 @@ main() {
   ./install-git-vim.sh
   ./install-nvm.sh
 
-  if [ $SHOULD_SETUP_OPTION == y ]; then
+  if [[ $SHOULD_SETUP_OPTION == y ]]; then
     ./install-optional-utils.sh
   fi
   
-  if [ $SHOULD_SETUP_KIOSK == y ]; then
+  if [[ $SHOULD_SETUP_KIOSK == y ]]; then
     ./kiosk/kiosk-purge-install.sh
   fi
 }
 
 read_val() {
-  if [ ! -z $2 ]; then
+  if [[ ! -z $2 ]]; then
     local val
     read -p "$1 " val
     eval "$2='${val}'"
