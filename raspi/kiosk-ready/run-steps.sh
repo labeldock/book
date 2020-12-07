@@ -1,5 +1,5 @@
 #!/bin/sh
-./first-upgrade
+./../first-upgrade
 ./install-git-vim
 ./install-nvm
 ./run-purge-install
